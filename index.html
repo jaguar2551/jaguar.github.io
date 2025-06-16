@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กิจกรรมยามว่างของคุณคืออะไร?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ค้นหากิจกรรมยามว่างที่ใช่สำหรับคุณ!</h1>
+        <p class="intro-text">ตอบคำถามง่ายๆ 8 ข้อ เพื่อให้เราบอกได้ว่าอะไรคือกิจกรรมยามว่างที่คุณอาจจะหลงใหล</p>
+
+        <form id="hobbyQuizForm">
+            <div class="question-block">
+                <p><strong>1. ในเวลาว่าง คุณชอบทำกิจกรรมที่ต้องใช้ความคิดสร้างสรรค์ (เช่น วาดรูป, เล่นดนตรี) หรือกิจกรรมที่ต้องใช้ร่างกาย (เช่น ออกกำลังกาย, เดินป่า) มากกว่ากัน?</strong></p>
+                <label><input type="radio" name="q1" value="creative" required> กิจกรรมที่ต้องใช้ความคิดสร้างสรรค์</label><br>
+                <label><input type="radio" name="q1" value="physical"> กิจกรรมที่ต้องใช้ร่างกาย</label><br>
+                <label><input type="radio" name="q1" value="both"> ทั้งสองอย่างพอๆ กัน</label><br>
+                <label><input type="radio" name="q1" value="other"> ไม่แน่ใจ/อย่างอื่น</label>
+            </div>
+
+            <div class="question-block">
+                <p><strong>2. เมื่อคุณมีเวลาว่าง 2-3 ชั่วโมง คุณมักจะเลือกทำอะไรเป็นอันดับแรก?</strong></p>
+                <label><input type="radio" name="q2" value="media" required> ดูหนัง/ซีรีส์/ฟังเพลง</label><br>
+                <label><input type="radio" name="q2" value="reading"> อ่านหนังสือ/บทความ</label><br>
+                <label><input type="radio" name="q2" value="social_media"> เล่นโซเชียลมีเดีย/ท่องอินเทอร์เน็ต</label><br>
+                <label><input type="radio" name="q2" value="hobby"> ทำงานอดิเรก/กิจกรรมส่วนตัว (เช่น ทำอาหาร, จัดสวน, เล่นเกม)</label><br>
+                <label><input type="radio" name="q2" value="social"> พบปะเพื่อนฝูง/ครอบครัว</label>
+            </div>
+
+            <div class="question-block">
+                <p><strong>3. คุณชอบใช้เวลาว่างอยู่คนเดียวเพื่อทำกิจกรรมส่วนตัว หรือชอบใช้เวลากับเพื่อนและครอบครัวมากกว่า?</strong></p>
+                <label><input type="radio" name="q3" value="alone" required> อยู่คนเดียว</label><br>
+                <label><input type="radio" name="q3" value="social"> อยู่กับเพื่อนและครอบครัว</label><br>
+                <label><input type="radio" name="q3" value="depends"> ชอบทั้งสองแบบ ขึ้นอยู่กับสถานการณ์</label>
+            </div>
+
+            <div class="question-block">
+                <p><strong>4. กิจกรรมยามว่างใดที่คุณรู้สึกว่าช่วยให้คุณผ่อนคลายและลดความเครียดได้มากที่สุด?</strong></p>
+                <label><input type="radio" name="q4" value="media_relax" required> การฟังเพลง/ดูภาพยนตร์</label><br>
+                <label><input type="radio" name="q4" value="reading_relax"> การอ่านหนังสือ</label><br>
+                <label><input type="radio" name="q4" value="exercise_relax"> การออกกำลังกาย/กิจกรรมกลางแจ้ง</label><br>
+                <label><input type="radio" name="q4" value="art_craft"> การทำงานศิลปะ/หัตถกรรม</label><br>
+                <label><input type="radio" name="q4" value="social_relax"> การพูดคุย/ใช้เวลากับคนที่คุณรัก</label><br>
+                <label><input type="radio" name="q4" value="sleep_relax"> การนอนหลับพักผ่อน</label>
+            </div>
+
+            <div class="question-block">
+                <p><strong>5. หากคุณสามารถเรียนรู้ทักษะใหม่ๆ ในเวลาว่างได้หนึ่งอย่าง คุณอยากเรียนรู้อะไรมากที่สุด?</strong></p>
+                <label><input type="radio" name="q5" value="language" required> ภาษาต่างประเทศ</label><br>
+                <label><input type="radio" name="q5" value="coding"> การเขียนโค้ด/โปรแกรม</label><br>
+                <label><input type="radio" name="q5" value="media_creation"> การถ่ายภาพ/ตัดต่อวิดีโอ</label><br>
+                <label><input type="radio" name="q5" value="cooking"> การทำอาหาร/เบเกอรี่</label><br>
+                <label><input type="radio" name="q5" value="music"> การเล่นดนตรี</label><br>
+                <label><input type="radio" name="q5" value="sports_skill"> ทักษะกีฬาใหม่ๆ</label>
+            </div>
+
+            <div class="question-block">
+                <p><strong>6. คุณเป็นคนชอบวางแผนกิจกรรมในเวลาว่างล่วงหน้า หรือชอบปล่อยให้เป็นไปตามอารมณ์และสถานการณ์ในวันนั้นๆ?</strong></p>
+                <label><input type="radio" name="q6" value="plan" required> ชอบวางแผนล่วงหน้า</label><br>
+                <label><input type="radio" name="q6" value="spontaneous"> ชอบปล่อยให้เป็นไปตามอารมณ์/สถานการณ์</label><br>
+                <label><input type="radio" name="q6" value="mix"> ผสมผสานกัน ขึ้นอยู่กับกิจกรรม</label>
+            </div>
+
+            <div class="question-block">
+                <p><strong>7. คุณคิดว่างานอดิเรกที่คุณทำอยู่ตอนนี้มีส่วนช่วยในการพัฒนาตัวเองหรือทักษะของคุณในด้านใดบ้าง?</strong></p>
+                <label><input type="radio" name="q7" value="creativity" required> ความคิดสร้างสรรค์</label><br>
+                <label><input type="radio" name="q7" value="problem_solving"> การแก้ปัญหา</label><br>
+                <label><input type="radio" name="q7" value="social_skills"> การเข้าสังคม/ทักษะระหว่างบุคคล</label><br>
+                <label><input type="radio" name="q7" value="time_management"> การบริหารจัดการเวลา</label><br>
+                <label><input type="radio" name="q7" value="health"> สุขภาพกายและใจ</label><br>
+                <label><input type="radio" name="q7" value="no_effect"> ไม่มีผลโดยตรง/ไม่แน่ใจ</label>
+            </div>
+
+            <div class="question-block">
+                <p><strong>8. ถ้ามีวันหยุดยาวที่คุณไม่จำเป็นต้องคำนึงถึงงบประมาณหรือข้อจำกัดใดๆ คุณอยากใช้เวลาว่างนั้นไปกับการทำอะไรมากที่สุด?</strong></p>
+                <label><input type="radio" name="q8" value="travel" required> ท่องเที่ยวรอบโลก</label><br>
+                <label><input type="radio" name="q8" value="learn_intensive"> เรียนรู้สิ่งใหม่ๆ แบบเข้มข้น (เช่น เวิร์กช็อป, คอร์สระยะยาว)</label><br>
+                <label><input type="radio" name="q8" value="relax_home"> พักผ่อนหย่อนใจอยู่บ้านแบบเต็มที่</label><br>
+                <label><input type="radio" name="q8" value="hobby_focus"> อุทิศเวลาให้กับงานอดิเรกที่ชอบ</label><br>
+                <label><input type="radio" name="q8" value="family_time"> ใช้เวลากับครอบครัวและคนที่รักอย่างเต็มที่</label>
+            </div>
+
+            <button type="submit">ค้นหากิจกรรมที่ใช่!</button>
+        </form>
+
+        <div id="result" class="result">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
